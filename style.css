@@ -1,0 +1,93 @@
+ 
+/*::before,
+*::after {
+    box-sizing: border-box;
+    font: 1em sans-serif;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.id-card {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    margin: 5px 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-item:hover {
+    background-color: #575757;
+    color: #ffffff;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    flex-grow: 1;
+    background-color: #f4f4f4;
+}
+
+section {
+    display: none;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 20px;
+    left: 270px;
+    z-index: 10;
+    width: calc(100% - 300px);
+}
+
+#home { background-color: #e0f7fa; }
+#about { background-color: #ffe0b2; }
+#projects { background-color: #dcedc8; } 
+#skills { background-color: #ffccbc; } 
+#contact { background-color: #d1c4e9; } 
+
+section:hover {
+    display: block;
+} 
+
+
+
